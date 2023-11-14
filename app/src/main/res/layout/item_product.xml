@@ -1,0 +1,62 @@
+<!-- res/layout/item_product.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Product Logo -->
+    <ImageView
+        android:id="@+id/productLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_product_logo"
+        android:layout_gravity="center"/>
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_product_image"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Product Description -->
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Product Cost -->
+    <TextView
+        android:id="@+id/productCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Cost: $0.00"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="8dp"
+        android:background="#3498db"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
